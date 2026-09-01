@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large raw data (optional — remove this line if you want to commit raw CSVs)
+data/raw/*.csv
+
+# Tableau temp/cache files
+*.twbx.lock
+*.hyper

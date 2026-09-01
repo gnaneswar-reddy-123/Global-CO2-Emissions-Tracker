@@ -1,0 +1,2697 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='1e0352c2b22c11af1516e166a961eb3c2326309659464e0143825a2a219fd8d9' _.fcp.WorkbookFingerprinting.true...creator-author-id='1e0352c2b22c11af1516e166a961eb3c2326309659464e0143825a2a219fd8d9' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='1e0352c2b22c11af1516e166a961eb3c2326309659464e0143825a2a219fd8d9' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='1e0352c2b22c11af1516e166a961eb3c2326309659464e0143825a2a219fd8d9' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='co2_country_year_processed' inline='true' name='federated.1xk8ia71iy7g9q1h1ue590fhn7tz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2_country_year_processed' name='textscan.00y0heb1jsn27b11xyexj1sv3rap'>
+            <connection class='textscan' directory='C:/Users/iswar/OneDrive/Desktop/Desktop/co2-emissions-tracker/data/processed' filename='co2_country_year_processed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00y0heb1jsn27b11xyexj1sv3rap' name='co2_country_year_processed.csv' table='[co2_country_year_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='real' name='population' ordinal='2' />
+            <column datatype='real' name='gdp' ordinal='3' />
+            <column datatype='real' name='co2' ordinal='4' />
+            <column datatype='string' name='iso_code' ordinal='5' />
+            <column datatype='real' name='coal_co2' ordinal='6' />
+            <column datatype='real' name='oil_co2' ordinal='7' />
+            <column datatype='real' name='gas_co2' ordinal='8' />
+            <column datatype='real' name='cement_co2' ordinal='9' />
+            <column datatype='real' name='flaring_co2' ordinal='10' />
+            <column datatype='string' name='other_industry_co2' ordinal='11' />
+            <column datatype='real' name='co2_tonnes' ordinal='12' />
+            <column datatype='real' name='emissions_per_capita' ordinal='13' />
+            <column datatype='real' name='emissions_per_gdp' ordinal='14' />
+            <column datatype='real' name='co2_per_million_gdp' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>gdp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>coal_co2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>oil_co2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>gas_co2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>cement_co2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flaring_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flaring_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>flaring_co2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_industry_co2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_industry_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>other_industry_co2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_tonnes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_tonnes]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2_tonnes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emissions_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emissions_per_capita]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>emissions_per_capita</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emissions_per_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emissions_per_gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>emissions_per_gdp</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_million_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_million_gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2_per_million_gdp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='co2_country_year_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]' role='measure' type='quantitative' />
+      <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+      <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Million Gdp' datatype='real' name='[co2_per_million_gdp]' role='measure' type='quantitative' />
+      <column caption='Co2 Tonnes' datatype='real' name='[co2_tonnes]' role='measure' type='quantitative' />
+      <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Emissions Per Capita' datatype='real' name='[emissions_per_capita]' role='measure' type='quantitative' />
+      <column caption='Emissions Per Gdp' datatype='real' name='[emissions_per_gdp]' role='measure' type='quantitative' />
+      <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+      <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+      <column caption='Gdp' datatype='real' name='[gdp]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+      <column caption='Other Industry Co2' datatype='string' name='[other_industry_co2]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/iswar/AppData/Local/Temp/TableauTemp/#TableauTemp_1pi0msm11wd9a013gfs7m0c62hk6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/01/2026 06:45:41 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>432</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>2</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25959</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdp</remote-alias>
+              <ordinal>3</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19047</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>iso_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[iso_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>iso_code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>344</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coal_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coal_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coal_co2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5158</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>oil_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[oil_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>oil_co2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4738</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gas_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gas_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gas_co2</remote-alias>
+              <ordinal>8</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3703</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cement_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cement_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cement_co2</remote-alias>
+              <ordinal>9</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3170</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flaring_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flaring_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flaring_co2</remote-alias>
+              <ordinal>10</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2471</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>other_industry_co2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[other_industry_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>other_industry_co2</remote-alias>
+              <ordinal>11</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1812</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2_tonnes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2_tonnes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2_tonnes</remote-alias>
+              <ordinal>12</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emissions_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[emissions_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emissions_per_capita</remote-alias>
+              <ordinal>13</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emissions_per_gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[emissions_per_gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emissions_per_gdp</remote-alias>
+              <ordinal>14</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16961</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2_per_million_gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2_per_million_gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2_per_million_gdp</remote-alias>
+              <ordinal>15</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16961</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='co2_country_year_processed.csv' id='co2_country_year_processed.csv_D87EAAFA8F0B4591885DFBDB2013F273'>
+            <properties context=''>
+              <relation connection='textscan.00y0heb1jsn27b11xyexj1sv3rap' name='co2_country_year_processed.csv' table='[co2_country_year_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='real' name='population' ordinal='2' />
+                  <column datatype='real' name='gdp' ordinal='3' />
+                  <column datatype='real' name='co2' ordinal='4' />
+                  <column datatype='string' name='iso_code' ordinal='5' />
+                  <column datatype='real' name='coal_co2' ordinal='6' />
+                  <column datatype='real' name='oil_co2' ordinal='7' />
+                  <column datatype='real' name='gas_co2' ordinal='8' />
+                  <column datatype='real' name='cement_co2' ordinal='9' />
+                  <column datatype='real' name='flaring_co2' ordinal='10' />
+                  <column datatype='string' name='other_industry_co2' ordinal='11' />
+                  <column datatype='real' name='co2_tonnes' ordinal='12' />
+                  <column datatype='real' name='emissions_per_capita' ordinal='13' />
+                  <column datatype='real' name='emissions_per_gdp' ordinal='14' />
+                  <column datatype='real' name='co2_per_million_gdp' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='co2_country_year_processed (2)' inline='true' name='federated.05nbsah02rguqg1gs6w830juckp0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2_country_year_processed' name='textscan.1wz8amn1nrvm7n105opsc0lajufy'>
+            <connection class='textscan' directory='C:/Users/iswar/OneDrive/Desktop/Desktop/co2-emissions-tracker/data/processed' filename='co2_country_year_processed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wz8amn1nrvm7n105opsc0lajufy' name='co2_country_year_processed.csv' table='[co2_country_year_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='real' name='population' ordinal='2' />
+            <column datatype='real' name='gdp' ordinal='3' />
+            <column datatype='real' name='co2' ordinal='4' />
+            <column datatype='string' name='iso_code' ordinal='5' />
+            <column datatype='real' name='coal_co2' ordinal='6' />
+            <column datatype='real' name='oil_co2' ordinal='7' />
+            <column datatype='real' name='gas_co2' ordinal='8' />
+            <column datatype='real' name='cement_co2' ordinal='9' />
+            <column datatype='real' name='flaring_co2' ordinal='10' />
+            <column datatype='string' name='other_industry_co2' ordinal='11' />
+            <column datatype='real' name='co2_tonnes' ordinal='12' />
+            <column datatype='real' name='emissions_per_capita' ordinal='13' />
+            <column datatype='real' name='emissions_per_gdp' ordinal='14' />
+            <column datatype='real' name='co2_per_million_gdp' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>gdp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coal_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coal_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>coal_co2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oil_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oil_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>oil_co2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gas_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gas_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>gas_co2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cement_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cement_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>cement_co2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flaring_co2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flaring_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>flaring_co2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_industry_co2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_industry_co2]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>other_industry_co2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_tonnes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_tonnes]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2_tonnes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emissions_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emissions_per_capita]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>emissions_per_capita</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emissions_per_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[emissions_per_gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>emissions_per_gdp</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>co2_per_million_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[co2_per_million_gdp]</local-name>
+            <parent-name>[co2_country_year_processed.csv]</parent-name>
+            <remote-alias>co2_per_million_gdp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='co2_country_year_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]' role='measure' type='quantitative' />
+      <column caption='Cement Co2' datatype='real' name='[cement_co2]' role='measure' type='quantitative' />
+      <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+      <column caption='Co2 Per Million Gdp' datatype='real' name='[co2_per_million_gdp]' role='measure' type='quantitative' />
+      <column caption='Co2 Tonnes' datatype='real' name='[co2_tonnes]' role='measure' type='quantitative' />
+      <column caption='Coal Co2' datatype='real' name='[coal_co2]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Emissions Per Capita' datatype='real' name='[emissions_per_capita]' role='measure' type='quantitative' />
+      <column caption='Emissions Per Gdp' datatype='real' name='[emissions_per_gdp]' role='measure' type='quantitative' />
+      <column caption='Flaring Co2' datatype='real' name='[flaring_co2]' role='measure' type='quantitative' />
+      <column caption='Gas Co2' datatype='real' name='[gas_co2]' role='measure' type='quantitative' />
+      <column caption='Gdp' datatype='real' name='[gdp]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='Oil Co2' datatype='real' name='[oil_co2]' role='measure' type='quantitative' />
+      <column caption='Other Industry Co2' datatype='string' name='[other_industry_co2]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/iswar/AppData/Local/Temp/TableauTemp/#TableauTemp_0x3jps01cevw9o1gfgm7y0vtgl1r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/01/2026 06:57:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>432</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>2</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25959</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdp</remote-alias>
+              <ordinal>3</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19047</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>iso_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[iso_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>iso_code</remote-alias>
+              <ordinal>5</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>344</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coal_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coal_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coal_co2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5158</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>oil_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[oil_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>oil_co2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4738</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gas_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gas_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gas_co2</remote-alias>
+              <ordinal>8</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3703</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cement_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cement_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cement_co2</remote-alias>
+              <ordinal>9</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3170</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flaring_co2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[flaring_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>flaring_co2</remote-alias>
+              <ordinal>10</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2471</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>other_industry_co2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[other_industry_co2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>other_industry_co2</remote-alias>
+              <ordinal>11</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1812</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2_tonnes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2_tonnes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2_tonnes</remote-alias>
+              <ordinal>12</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emissions_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[emissions_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emissions_per_capita</remote-alias>
+              <ordinal>13</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emissions_per_gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[emissions_per_gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emissions_per_gdp</remote-alias>
+              <ordinal>14</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16961</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>co2_per_million_gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[co2_per_million_gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>co2_per_million_gdp</remote-alias>
+              <ordinal>15</ordinal>
+              <family>co2_country_year_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16961</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='co2_country_year_processed.csv' id='co2_country_year_processed.csv_63FB856C169748A1912E9468D48D3F37'>
+            <properties context=''>
+              <relation connection='textscan.1wz8amn1nrvm7n105opsc0lajufy' name='co2_country_year_processed.csv' table='[co2_country_year_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='real' name='population' ordinal='2' />
+                  <column datatype='real' name='gdp' ordinal='3' />
+                  <column datatype='real' name='co2' ordinal='4' />
+                  <column datatype='string' name='iso_code' ordinal='5' />
+                  <column datatype='real' name='coal_co2' ordinal='6' />
+                  <column datatype='real' name='oil_co2' ordinal='7' />
+                  <column datatype='real' name='gas_co2' ordinal='8' />
+                  <column datatype='real' name='cement_co2' ordinal='9' />
+                  <column datatype='real' name='flaring_co2' ordinal='10' />
+                  <column datatype='string' name='other_industry_co2' ordinal='11' />
+                  <column datatype='real' name='co2_tonnes' ordinal='12' />
+                  <column datatype='real' name='emissions_per_capita' ordinal='13' />
+                  <column datatype='real' name='emissions_per_gdp' ordinal='14' />
+                  <column datatype='real' name='co2_per_million_gdp' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='co2_sector_processed' inline='true' name='federated.1yqmkb014dsqkl1d7nd591d2cilp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2_sector_processed' name='textscan.0giq7ys0zgaz0p14zkh7h1k5jz49'>
+            <connection class='textscan' directory='C:/Users/iswar/OneDrive/Desktop/Desktop/co2-emissions-tracker/data/processed' filename='co2_sector_processed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0giq7ys0zgaz0p14zkh7h1k5jz49' name='co2_sector_processed.csv' table='[co2_sector_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='real' name='population' ordinal='3' />
+            <column datatype='real' name='gdp' ordinal='4' />
+            <column datatype='real' name='sector_co2_mt' ordinal='5' />
+            <column datatype='string' name='sector' ordinal='6' />
+            <column datatype='real' name='sector_co2_tonnes' ordinal='7' />
+            <column datatype='real' name='sector_emissions_per_capita' ordinal='8' />
+            <column datatype='real' name='sector_emissions_per_gdp' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>gdp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector_co2_mt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sector_co2_mt]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>sector_co2_mt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector_co2_tonnes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sector_co2_tonnes]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>sector_co2_tonnes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector_emissions_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sector_emissions_per_capita]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>sector_emissions_per_capita</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector_emissions_per_gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sector_emissions_per_gdp]</local-name>
+            <parent-name>[co2_sector_processed.csv]</parent-name>
+            <remote-alias>sector_emissions_per_gdp</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='co2_sector_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Gdp' datatype='real' name='[gdp]' role='measure' type='quantitative' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+      <column caption='Sector Co2 Mt' datatype='real' name='[sector_co2_mt]' role='measure' type='quantitative' />
+      <column caption='Sector Co2 Tonnes' datatype='real' name='[sector_co2_tonnes]' role='measure' type='quantitative' />
+      <column caption='Sector Emissions Per Capita' datatype='real' name='[sector_emissions_per_capita]' role='measure' type='quantitative' />
+      <column caption='Sector Emissions Per Gdp' datatype='real' name='[sector_emissions_per_gdp]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/iswar/AppData/Local/Temp/TableauTemp/#TableauTemp_1vol05s1fya46o13izlcz1gbj7dd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/01/2026 07:11:27 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>505</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>iso_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[iso_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>iso_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>466</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>619</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>3</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28617</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22847</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector_co2_mt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sector_co2_mt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector_co2_mt</remote-alias>
+              <ordinal>5</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13706</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector</remote-alias>
+              <ordinal>6</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector_co2_tonnes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sector_co2_tonnes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector_co2_tonnes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13706</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector_emissions_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sector_emissions_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector_emissions_per_capita</remote-alias>
+              <ordinal>8</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70753</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector_emissions_per_gdp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sector_emissions_per_gdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sector_emissions_per_gdp</remote-alias>
+              <ordinal>9</ordinal>
+              <family>co2_sector_processed.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52447</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='co2_sector_processed.csv' id='co2_sector_processed.csv_6842A41EAD874338847F4FAE90F491D6'>
+            <properties context=''>
+              <relation connection='textscan.0giq7ys0zgaz0p14zkh7h1k5jz49' name='co2_sector_processed.csv' table='[co2_sector_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='string' name='iso_code' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='real' name='population' ordinal='3' />
+                  <column datatype='real' name='gdp' ordinal='4' />
+                  <column datatype='real' name='sector_co2_mt' ordinal='5' />
+                  <column datatype='string' name='sector' ordinal='6' />
+                  <column datatype='real' name='sector_co2_tonnes' ordinal='7' />
+                  <column datatype='real' name='sector_emissions_per_capita' ordinal='8' />
+                  <column datatype='real' name='sector_emissions_per_gdp' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Emissions by Source'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Emissions by Source</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_sector_processed' name='federated.1yqmkb014dsqkl1d7nd591d2cilp' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1yqmkb014dsqkl1d7nd591d2cilp'>
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Sector Co2 Mt' datatype='real' name='[sector_co2_mt]' role='measure' type='quantitative' />
+            <column-instance column='[sector_co2_mt]' derivation='Sum' name='[sum:sector_co2_mt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1yqmkb014dsqkl1d7nd591d2cilp].[none:sector:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1yqmkb014dsqkl1d7nd591d2cilp].[sum:sector_co2_mt:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1yqmkb014dsqkl1d7nd591d2cilp].[none:sector:nk]</rows>
+        <cols>[federated.1yqmkb014dsqkl1d7nd591d2cilp].[sum:sector_co2_mt:qk]</cols>
+      </table>
+      <simple-id uuid='{34B5D012-A4AB-4B34-9628-BC45465AA53E}' />
+    </worksheet>
+    <worksheet name='Global CO₂ Emissions Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global CO₂ Emissions Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_country_year_processed' name='federated.1xk8ia71iy7g9q1h1ue590fhn7tz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xk8ia71iy7g9q1h1ue590fhn7tz'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[sum:co2:qk]</rows>
+        <cols>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{A88F9D47-FB47-49D8-B53C-EA83DE0D4066}' />
+    </worksheet>
+    <worksheet name='Top 10 CO₂ Emitting Countries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 CO₂ Emitting Countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='co2_country_year_processed' name='federated.1xk8ia71iy7g9q1h1ue590fhn7tz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xk8ia71iy7g9q1h1ue590fhn7tz'>
+            <column caption='Co2' datatype='real' name='[co2]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[co2]' derivation='Sum' name='[sum:co2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([co2])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[sum:co2:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:country:nk]</rows>
+        <cols>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[sum:co2:qk]</cols>
+      </table>
+      <simple-id uuid='{7341C6B5-6356-4FD9-A1E6-917646C13A7A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Global CO₂ Emissions Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='40785' id='3' name='Top 10 CO₂ Emitting Countries' w='98202' x='899' y='9156'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49108' id='5' name='Global CO₂ Emissions Trend' w='49098' x='899' y='49941'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49108' id='6' name='Emissions by Source' w='49104' x='49997' y='49941'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='8205' id='7' type-v2='text' w='98202' x='899' y='951'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>          Global CO₂ Emissions Tracker by Sector</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98098' id='8' param='vert' type-v2='layout-flow' w='98202' x='899' y='951'>
+                <zone forceUpdate='true' h='8205' id='7' type-v2='text' w='98202' x='899' y='951'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='22'>          Global CO₂ Emissions Tracker by Sector</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40785' id='3' is-fixed='true' name='Top 10 CO₂ Emitting Countries' w='98202' x='899' y='9156'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49108' id='5' is-fixed='true' name='Global CO₂ Emissions Trend' w='49098' x='899' y='49941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49108' id='6' is-fixed='true' name='Emissions by Source' w='49104' x='49997' y='49941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{54A42916-871C-47D2-88EE-A594876A43D3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='Emissions by Source'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:year:qk]</field>
+            <field>[federated.1yqmkb014dsqkl1d7nd591d2cilp].[none:sector:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2F3A4859-7AC1-41A6-ACBC-4EADD69F4318}' />
+    </window>
+    <window class='worksheet' name='Top 10 CO₂ Emitting Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1CA020AE-8314-41CF-AFB1-B212F9E576E9}' />
+    </window>
+    <window class='worksheet' name='Global CO₂ Emissions Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xk8ia71iy7g9q1h1ue590fhn7tz].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{39A00C8B-3F94-4C40-95A2-62E5118AA6B6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Global CO₂ Emissions Dashboard'>
+      <viewpoints>
+        <viewpoint name='Emissions by Source' />
+        <viewpoint name='Global CO₂ Emissions Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 CO₂ Emitting Countries' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7D27B98F-57C6-4F9C-B508-A44D4C2FC510}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Emissions by Source' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Global CO₂ Emissions Dashboard' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nOydeYBkVXXwf+/Vq32v6q7eu2d6dmAGGJBNNgWNuGKMxiREoyiIIioaEERA
+      RIjGaOKWaGJckpgvGg0oIpvIPrIOMDPM1ntXd1fXvle9V++9+/1RPT370j090z0z9ftnpqrv
+      Pfe8V++8e8+9554rCSEEDRqcoMjzrUCDBvNJwwAanNA0DKDBCU3DABqc0DQMoMEJjXK0GhJC
+      sGPCSZIkJEkCIRBTn/dXhwP8fZeSCLGPckJg7tnmHvrs+f1+FGFfU2UH12v+2N/k3mx1rsuT
+      mFX1g/zOB2rzkH+jWXJUDECYBj/5zld54tVBLJJJU88avnzzdShC4447v85tt31hn/Weuvcn
+      aN0Xcsna3oO0YHDbHXdxx2237mxTGPzH977O4+v7kDFp6lnNl27+FDaLRGxwE7d/5esI2YZa
+      q/GBaz7HG846if3e4lqO97/3A0S6e6a+sHHjHXfSGXQeWK1SnK/9+Lfc8IkPHUT/Og///IeE
+      z3o3axeFDqn8gRje+Cz/8IP/QmgltkUzrOjtpHvV2fztx6+Ylbwf/P1tvPPjd9DmmUXlWpHb
+      vvYD7rjls4dcpZAY4Zbb7gTFQS5f4C+vvp43n7v6kOuPbH6OoXKIC89YeuCC4ijwxP/9q7jz
+      ez+f+mSK//2XO8UP731aCL0srr76E9PlTNMQumEI0zSFEELc/6Ovi3ueek0YhiEMwxS7FJz6
+      bkdZTVx59cd2a/OpX/9YfPm7/0/sqPWLf/6K+PdfPy0MrSQ+dMVfimiyIIQQolYtiI/89V+K
+      aKa8/wtQk+KKv/nkXl+bpinMaV3qLe3Uq67njmsxTVPouj79efp6d/nOPGB5c/rve9YxDF0Y
+      hrFv1Sc2iGtu+fZeOtfrHUi33b+78/orxUhup97T7e96vXvck2l5lay48hM3TMk0dpbZo71d
+      2//Xuz4vfv/ykBBCCF0tibv/7uuitksbuz4nO/XdKfv5B/5DfPe/H59uwzRNYezjfh6FHkDw
+      y/ue4Avf+dHUZ4l3ffA6Yll1t1JbXnyMf/rhL/C67Dial3LrDdcA8Ntf/ITnf2dhbDTK33zq
+      Fi44tYcfffcbbJvIoxXTrHz9u7j6/Zfu1eo99z/GZ776/em3+js/+EmSeY3o5mdpPvliOsL1
+      V5li9/DBP72Yex56lk+87+IDXodpmvUrmOqS//0bdzJhutHyabZu2c5b3vYWBgcGGBno44PX
+      f5k3LHXwt//4K/7+lo/x5ZtvxLD7yWbSXPmZW+i0Zbjly/9IpCVCTrNw9523cO/37mTpOz7N
+      aa1w2xe/iCY7yOeKfO7WO1naLnH1X11P98pF5HNpKo5WvnXnjfy/H3yDV0ZzoBY449L38d4/
+      OfeAv8bk5sf46n89jU3LcuHb/5J2S5z/+NXDuBw2YgX452/dTXFiO7fe+U2cbhemvYm7vnTj
+      dP3kyGt87d/u5cu33sjgy4/xnZ/eg9uusGTtG/joX7ydr9z8twQ6OplIFLjx5lvw2ev10mPb
+      ueP228hn0yhNS/nKTddww/U3ctc3v4nDIvGbn/wTrjXv4NK1SwBYtKSH3913H2ev+Cguu5PP
+      31jvPSaHNnHX1/8Ft9eFt3U5N1z3YTLRrXzp776F0+UCd4Qbr34v3//Rzxmp+gg4a/z5Zedy
+      9x23ktNkivkiH7/hVlb3erj+4184Gj1ATfzVFX8z/Sbu27JBPPPMM2JL/8h0D2DqqvjIB/9G
+      5Ku6EEKI//zHW8Wvn9ki7v/R18UPf/20EEKIan5CXPHhTwrT1EV0bEKYhiHS433ir6/8pNhX
+      D3DVX10hSqbYi+d/9+/iH3/68G7fDb70sLjlH360/0tQk+K8088QV111lbjqqqvEi9tjQggh
+      /um2z4gHXugTQgjx0M/+Qdz1/XuFKYSIbviDuPkbPxYiOySu/OxdQs+NiPf/zaeFWtOFqddE
+      zTDFk/f8QHz9x/cLwzBFrVYTpinEj+76rFjXlxG//Jcvi/95dIMQQoh8bJv4yHW3CNNMiT99
+      +wdEbeqt/aEPXCE00xRXXvF+kcpXhGnW5eyl+h49QPTl34m3ffCzQp+6N+PRqNBNU6iVkrjx
+      qr8QW+OquO3TV4ltk/Ue8sWnfi+iqZK48/orxWsDI+Lqqz8ukoWqMHVVXPXhK0VRM4RpGuLW
+      6z8uJgqauO6D7xGPvLh9dyUqWfG+Kz4itKlGv/Olz4jHNoyKn37jVvG757cL09DEJz/2MVHS
+      du3lDfHY/f8rrr7yQ+Jjn/yc2NgfFaYwxec/+VExnCoJ0zTFD+6+WbzQnxBf/PTVom9K3+cf
+      f1iMZ8rihQf/U3zv/z0hhBDikf/+lvjX/3tSCCFEKTUsPnTN54Rh5sSbz7vkaPQAFoI2nawm
+      CNok8tkMw30b+Of/fICffuvzAOjVApInhNduAeDsc9by85e3cLodwqEgAHZvCx6lTA2JDese
+      5ifbxmhri2AYxj5bdbstFMs6Lnf9Ek1dI5krEY50kHxtYreyidg44Ug7wqjxq5/9mIG0wceu
+      vhKvwzpdpvfU8/j+97+1RysKba3N9au0yLREWpAAq9WKwNx5B3xdfOL9F/C5T1+HUJx8+oab
+      Oe+tV7Dln7/Ntdf+mubuk7jpc5+YLv/KhlE+/FcrAfC2LMMsxBBAc0srilzv02TTpAZ88ebP
+      cdetN1BSTd77wY/xxrNPOegvcsZZ52CZ6hqNcpKv3PFDAuFmssUqhlljOGuwNFLvIde+/o31
+      +1fTuPPLd2NUS1gUC3o1T3//Zr751bsAyGgyhWIFh7uJ007Ze9zt9YewTjW69tSVbBwe473v
+      +3Nu/97/car3fELLz8Fl3WWSAokLL3sPF132HlLjg1xz7af49k9+wrZtW/nJ976BBOTTeZYX
+      i0xmVTqb6/qeeWF9NDC+S9uvbBjk0mv+GgBXqBu7lkUzYfGqNUdjGlTi0vNW8/PfPI4QcPpZ
+      59Mb9lDexeNU7G6Mcg7VEIBg08YtLFuxGIByuQKAoebRhIvC0Ms8tCHDzTd9ng+8/904lH1f
+      wiXnreF/73uM+mSIYP1jv+Jf/+chuk86h+H1j5Cr1AAQhsbP/u/3vO1N5xAf3oxv6dlcdnqE
+      n9379JzdASFMXnfxO/jWd77LHde9n69/5ycYwsKHr/1bvve9f+YUf5r71/VNl1++NMJrm0cB
+      UPNj4Ajtd/altfcUvv7Nb/Hdf/oa//7db85QMYO7v/ZtPnfzLXzyEx9jcVsYsNDiEoxmqwBs
+      2/Aik7kKQpL5zBe+zE1XvZNv/9svUOwuFi89hRtu+gK33PIFvnDz51nU7N1vU9VqeWpGTtA3
+      MMbi9hYCHSuxFwb58X//mvf82Tt3K//9f7iT/lgOgFDbItb0RkgXDRYvWc7Vn76BW265hZtv
+      voUzlncQcFmIZ+vPydZXnieRr+4ma/nSdjZtGQSgVkqgWtzY6u/aozML9PYPXMvtN3yGTz3z
+      AEGnhHAEWdQkAxIW2YKkOLjmirdz3Sc/RUfET7Ki8Pd/s5o/jPye3/78x2z/4/3Ex4Z4zweu
+      w+H1MbrxSe6+u4RsgVxFQyBhsVh2a/Mtf3kNX7nlBj7z/CP47BDLC/7+a3dicVj5wqc/xLVX
+      f5Rly5YQHeznond/mGUtPmAN5zcl+drdP+Xyj96wm7yR157j2muvnf78Fx+5HlmWp30MSZJ3
+      TtVJErK04/pkasUkN3z+Vprbe8jGR7nsTz9K3/rH+fZ/3k93ezODgzG++P4uHn3GgiTBe6+8
+      jus/dxMvPtTLUH8fn7jpy0jUe5kdWCwWJOA7d3+BLH4sRoXV51y8z/tvkXfWkyQJWZ7WmohX
+      4q677sJlldk4MMabVY1rr/s4t1x/Lct6u0kUDO7+ylqsNjstzWE6F1/Oz/73Y4zk3slH3vcm
+      PnndZ+huDVIWbm79wmeRZcveCkiQm+jntltvQ5FNMjUnX1vTA0i8+0/O4Ys/fZYbu4K7VXn3
+      e97NDX/7CRYvW0G1kMYSWsXyVh8fv+qD3PSZT7FkUQfJnMoXb/sin/jER7n1s59iaW8HyZLM
+      3XecQVvPUh78/j8SdtV4959/hJtv/Dzb1nUxMTLAh669CXnHM7P/ge9cY4p8JilSmfx+S+ia
+      KnKF4l7fVyslUdN3znIYek2UypVDarWQS4t4KiP2dAdMQxcT4+NCrenT3xWTo+Kz198ghicz
+      hyR7ZpiikM/tdh2moYtcLr/bbMau5XPZrNCNff1tdyrloqhUtdlpZZqiWCzupYOh10Q2l9/r
+      vu1JTa2KXKF0aG0Z+h6/mynW3fcT8aN7n96PboaYjI2LQmn333paN/PA3+l6TdT0Hb+vKfK5
+      7G73XwghJCEa4dA7eOa+/+D7966jJejhzZf/FZeed+p8q3TcopZSfPWur1KQ/HzptptwWecn
+      KKFhAA1OaBqxQA1OaBoG0OCEpmEADU5oGgbQ4ISmYQANTmgaBtDghGanAQiBXquhaRqapmGY
+      5gGq7UQIgWGY0//X1Co1fff4HNM00DStvhQuBDVNpapq7GsCdkdZTdOmoy/32eZ+9RP7jQ/a
+      F7vpdpgIYe5X5wYLE8vtt99++44PT/z+fv7nP/6b0VwOuzNAU6Ae27FjiV/ssUOrVs5x7733
+      sql/gpNXLmFo0/M8uX4rrzz/LD0rT8auyNTKOX7xi1+RSCao4SA/vo3Hn9/IxOAWJgoGPe2R
+      3RR67pF7efjZTQwPbMcTbifgce61u6lWyTI4kkapJogWZUJeBxtefJFgezsWBK9t2kKkJbJT
+      Z0lC2of+WinD//7yHuKJBLpkpynoO+DOp13rv7L+RcIt7dNBZQDlzCTjKZWg37Vb2T3bbbBw
+      2BkLJElc/OZ3oOdVXvdnf4ZPCB5/5H5M2YYz2MGSQI3HNsZwixKrznoDvW1BLDYX77j8ch55
+      9EkAXu2f4PJ3vYvc6AZe3DjIG85YysvrnuL8t/0ZXQE7ILjnnhf408svR0Jwzz33wpkn766R
+      bOFNl72TjoAV2WLhgd/8CqvLx/jEJB3trajCzqXnnkKhUiD66h/ZlLFz0bmn8+hDD9I3McmF
+      F72BYqlIJTvBr+5/gkjIg79jBUvCMk8+vwlJUznz0svoCLp5+bl1nP+Wd9MZqu/seuW5J0kU
+      NAzJwYVre9kSUzl9ZSvP/nELbqXIYLyEUS5w1kUX88hDDzIYneDCC87lhXXPka2avOX1p5Cv
+      6oxs38i20SSabvKm89dy34OP43Z5OP+Si3Ep+4iVaTBv7NcHMCuTlOVm3njJpaTGB1BLeVae
+      fi6Xve2tbH75xXplxbrbG9A0BRJgd7lQS2UA8gUVv882VUIgTKYCyCQUi4IwTSrV6vRb0jRq
+      PP3EozzyyO9J5SsYsoNLLrmUUDDIG994CWY1j6lrZLIFTjnlVM658I2sOWkVa9acxlve/lbC
+      XiepVAqjVqVz2WredOmFJMfHeOHl13jbO97OyYvbKGo6AIWKitflmNKtxshkkUsvuQQvBZK5
+      AtlCCTBIpbLkSmXOv+gNnLGyjVRJ4dRTT+Oyt76dkEuiP5rhPZe/Fdmoki1UePb5l2gKBymM
+      DzOezVOsaHT1LsFpabhcC439/iKS1YleLSLMnWN80zQpZeNYXT6gPiQwTRPTrP/rs0ukSxqD
+      2wbp7u0GYMXKbl54YTOmaaJpBk6LQapYpVbJU9YEqdgozzz+EC9ujtYVslg5/+JLeNObLqXJ
+      d+A9t7Iio2u1qY3TAl0397sZ3CabxNN5Eonk9HfLFnWyfuOWum41gWnWMIWgrNZw2KyYhomu
+      aej7GNdL1P0QAfQsWoRll+GN0+WmraOLN77lMppCEd7/3sspRTewaTR7wOtpcPTZzQcAkC0W
+      gk1NWC12hJrh5Q0bWbnmLCzVBM9uHKJULHPh+edikSWK6UnWPfcSmlalXJM4a+1qnnr8MTR7
+      mDNP7kUCfOE28hN9bN3eh6G4WXvaKtY9+QR9g2NcdMklKGaZ7dEc575uDYpFRsJk82uvMToy
+      jMvfhN/jJBQKYbHIu/wbRrHZae3oon/jC5hWN71dzTz77EuEW9pxO22EQiGsdid+rxtZsbJm
+      zSlsevlF0tk8LYuXE3Lb8Te3kxvbzpbtfQjFzeJWP3987kWau5fTu6ib4S2vMhpL0dmziJbm
+      MP5AEKtiwenx0R528+zzLxFu7cbldBIK+ECSsTrcnLSkg5de2UgqU6AtEmDd0+so4+T0U1ag
+      WBp+wELikIPhEkObKLoXs7jZNacKDG3dQDRdYvnKU4gEZ5Ny4NAYG9zGxm2D6Ci8+dI3Tu9O
+      anBi04gGbXBC0/DKGpzQNAygwQlNwwAanNA0DKDBCU3DABqc0DQMoMEJzTFjAGKX9OpzIash
+      58SUs6eso3Y+wJ6IHTn3p/K/C0DeJZzANAyQLcgIDCGQJYlfPv4ahbJ22G2bU/Iack4sObtG
+      Bu9g3gwAoTM0EqOUjNK+7CTKJRXZqBKOtKJVS2QS4/jaV1KOD1Cx+FjSGeGRFwaYSJfmTeUG
+      xx/zNgSSZCtmrYQ7EGZ0+3aEXkLxNhEd6mP78DgOm0J8bBRvUwsWuRG20ODIMH89AOCwKbgC
+      bZQqGq1NIYaiY7g9AbxNLhxmCb/NyuREDFegeT7VbHAcc8zEAgkhGI5l0c3DV9c0DGTL4W9M
+      acg5xuSY5l7nje3RAwhMEyRph4MKsixT32drTmdgNg0TySLv/0ytOcA0DSTJstvWxOe3jFOo
+      zIETbIpdMiQ35MyVnHdfsJKgd+ceDl3XUZTDH2TMlRzDMOoZvfdvADAWHaPZY5Iw/bgUBb2S
+      webyMxkdxt/cSlukiUwmg8fjIpGI09zaSTo+QSAcJh5P0tEWYSI2iWJRcHoDGJUcisuPz+0k
+      GY/h9AbIJBNEWtuQJAnTqFEtFagYMvnUJK0d3UimTrWq4m9uxb6L4f/+xYYTvJC59Ize3Qzg
+      WGAvA0gnYpRSKo4WhXgsi6O5k1xsAovVSbWYJ4lBLJ0jmM/ia21m+yvraV5+CmMjw3R0tDKw
+      dRPW8CJKhRTVUolkNoPdmWVlbyulmoIeG8Pb2s7A9m34m9oo5eMgFKxWCzaHE6/DwstbRmhx
+      W6k1tWKfj7vS4IRhLwNo6+oh4DDJ6FZs4Qj5bAxV02lrCSIhaIpEUHUDp2LFYbPT1NpCdnIM
+      r9vN2EScQDiC7HbilH3IgIGJx9+EYndTKw/h8nqIj43jC4XJp+NY7HYCHg8gMGpVMoUKnR0d
+      KLUyQi1RUAFkPNN7dxs0mDsO6AQLs8bQ0AiBplaCPvfR1GtvXYRgZDK3z/25M8U0TOQ52KDe
+      kLM7Xc1+bNadY9Zj0gfYFUm2srh3yYwbEsJE02rYbDZ0XQckFMWCptWwKhYMU6BYFSSgWCjg
+      9njQNA2rzQamgTHliINMtVrB7a5vlXx2c3RuVoKPE6fzSMg5a1UHq7rDc/LAHQsckasc6u9D
+      UhQkxUEpn6OlrZ1CehKL3Y2mqTisFmqSnZ62MJPJNNbEJFjtBIJBxkZGCEVayaUmkYWJ0+un
+      rEs0+108+uJgwwk+woR9LlZ1h+dbjaPGEVkJNiSZnp4ejGqZSrlMVdXQkenq7MBisdDe2Y2u
+      FqmpZWx2N5qQ8Ngk4pNxnL4gLU0hquUShmSlKRwkn88dCTUbNDgyPYDHYWOgfwBfqBlVUxFC
+      4HXa2d7Xj8Nuo7+/j0C4FcVmRVNz+F02EpkC3lCESjbByJhEa2c3keYIlVwCp3N+/Y8Gxy/z
+      vhKcTqUIhsP7XVTLpFL4Q2EkBKPxHLoxByvBprHv4zwbcgj5nHgcyoJyXufNCd4nU5mZZVlC
+      IO0zTFUIE1XVsNvt6LUaSDKKIk85wQq6aWK1WuunqttsIASqqmK12xFTTrCMqCeastunjWPd
+      pjlygoU5dY7v8Sfnna9fSWvo8PIr1ScuTgxmYQAm69at49QVXeSVFoz8JC3t7WQSk9g8QUI+
+      N0P9fchWK1jslPI5Wts7yKdiKA4PqlqdcoJt9LQ1EU+mSScmkW12AoEg0ZERwpFWstNOcGDa
+      Cf7DSw0n+GC8fnXPYRvAicSsXjttrU0Mj4wxPjxEsCXC0EAfZVUil4oRi8UxJJnu7u5pJ7hS
+      VdGR6exo38UJLk07wTUh4bZKTE7GcfoCRHZxgpvDgYYT3OCIMfMeQJLwBppRTI2AN0QsOoYv
+      EMJmdWAaVpqbI8TGqnUnOByZdoJ9h+oE55KMjMVo7ewh0txMOZfA1XCCGxwhjiknOBrPzVE4
+      9PGx8rovOR0RPw7b4TmMC815XVhO8BwTCtcXXYQQ6IaBdepChWkikAhO/x2e2RglX1YPu82F
+      tld1h5xTl7Zy1qqOWcuZqwflRGLB3C21mOaFzaOcu/YkxsZjNAV91GQ7+WSc5vYO7IqFP6w/
+      vp1gu005LANoMHMWTFqUkeFRUPPEk0kKZY1iPkuuUELXNYajk/OtXoPjlAViAAJfUyvnnvM6
+      DN3EoQgMyYoiNGpmIxS6wZFj3p3gQ0UIwVgif1zvCfa77Ye1o2qhOZ0LTc6CcYKLuQyFskpT
+      JIJ1BrMf/37/ehK5yuErMJUgab7k/MPH33xE4uYbzJx5ueuJZJJwpJVyPo/L4yCfL5JJ5fD5
+      3eTyJcJBH6lslubmFpLxGOGWDgJeF+PJwnHhBM/FodwN5oZ58QFMw6BSrpDLZNFqFRLJBDZn
+      gHyhRFuTi+hIko6uNga2baRsKBTyhflQs8EJwLz0AH6/j3y5RCjgIzaZoTnSitPuRlcFiVyJ
+      kE9hZCzBylNOJx6bwOevH8vqcdrwuWqH3X79LPjDZ7ZyGnnuFg4L0gnWNQ3ZZtute9qR2bee
+      p+gw5S8w56wh5+jIOaJOcLVcJJ3NEwg14XLYDl4BAEE8niAU9DM+HiPS1kGtnKNUk7DLBjoK
+      slkj0NSMDHz5p0+QyJbnSuV54dIzern8gpXzrUaDKebMAFKTCRzhMLJQKZShVi6Qz2dwuDzk
+      8wUibRHiY5P4wmGqhQwOb4hIwEWxopHLDtHW3o6ulhlP5uhd1E00OopdaMjuIBPxLB2RABPH
+      gROcLVbnW4UGuzB3TrAwqVYqaNUihZJKMpFEMyyUSkV6F3USm4ji9beQiY+SyhYoFYvoNRWr
+      1QGSjKmWGJ2YxKJYUSwWCpkUquymOeCmqs7B1GeDBvtgznoAfyjAZDqH19VMNR3HFw7jcjqx
+      W0xGojFaW5oZ2D7K4uVLKWVT2NxerA43anWU9pYmxmIJ2to6UQspohNxFi1dgc/rJRsfIxgI
+      AeB12Smrh79baT6d4MON1Gwwtxw1J1iYBroJVmX3ldNKuYzD5drvg1Qul3G5XA0nuCHnsOUc
+      /ZVgIUgkkzQ3NyPJFhQMSuUKbteO5X5BoVjEqsiMTUzSsosTbJN0DMmKbNawO5zIEtzxk7ly
+      guevD7jm8jM5ZXFkDtpuMBccUQPQtRJ92/pw+QLERgYJR1oxDJ1sahKLw7eLEzy8mxO8ZFE3
+      o9NOcIiJRN0JjqWOfSe4OgdDuAZzxxFdCZ4ci+JwO4iOTSJLUCoWyWQyVFWDVDKxixMsYWrl
+      aSfYssMJtnhoDrgaTnCDI8YR7QE84TY6FvvIZjMU8zpOlxuPx0U2nSbsb5p2gjtamonu4QQv
+      XroCr9dLZhcn2Oe2U9GMw9ZLTJ1MOR9yFGWBRKA3ABbASnClUsHhdO53JF2pVHA6nQ0nuCHn
+      sOUc1AkWwqRa0RCYuFyuGTdQLBXxuD0Ui0U8Hg9GrUq5oiHbXLgdyl7lAJzOA8e/7/r3O378
+      OPHcHDjB8+ADX/OuM1nd2zIHjTaYS3Y3K6ExNjaJgUZz0E8mk6G5OUJ0MkU4HKKUTeIONFHJ
+      pQi2dOJ1Wujb3o8uwO0N4LRbqBRy9I/GOWVZN9HxUaxWN7I3jJ5P0tTaQdDnplIuk0nGqegy
+      TT4HpRrIehVVKLisglQmj9Wq0LV4GU7rzjd+LF08Zp3gqtZwfhci8p4fBSYgyJcqLOppY3Jk
+      CG9zF9nYAMmMRqlYQDNlbNTI5nK4PEEUxY4wNLLZDIWSSmtziHgqy6Lu9voZAMlxKtjIpVPE
+      kxmy2QwmMjZFIp0v0dkaplKTkGoqFc3EabXREvZQrBqYpok5B7vAGjTYF7v3AJIVl0PGkL3o
+      lTzD0RRdXRFeHh1mVe9JuNOTODx+7FYFp8eD3dSx2TQ8XhcWWcIwDWqVMvmqTktTkIlElqZI
+      hCbFNnWQXoSA14XdKk0ncRW6ythkBp/bSk048HlcCMPE7lCQdZVyVUZCxuW043c7qNbmwgk+
+      +hvC9lwAbLAw2K8TXKvVsFqtCENHx4LVMr9R7A0nuCHncJnRSrDVagVAsihYDyA0k8kQCPip
+      VFVcuzisQpiYJlQqZTwez44viSeSRCL7P/ldmAblqrbLavFOvvTjx4nPxUrwUewCrnnXmaxZ
+      0nB+FyqHbVbjo/2Uqj1UynkUTKwuP5JWQBeQzqm47AASi5atQlJz9PcP4Q34iQ72UTMkXF4/
+      iqliKk5saKDYsSgKidg4gaZmsok4vuY2gl4Xk8egE9xwfhc2hz2ecPubqOYS1GplJMWHWipQ
+      1gw62lppbm7G4XTREXJSVGEiOobTKTM6OonL58dqsYNRYTKeplIuUSirNAc8JOITWBwB7FIN
+      Q5JIJLNzca0NGuzFYfcA4XAYuxwiUzExyjmUQAiXXcFidSBqSfzBMHYrKFZQWrro8XnJZrNY
+      7TY8TgPZIuGyO9AlG163E1mx0dHZQzGbpqy5kSULkVAAgIDHgVo7/GNSBQJpDhYCDkWOreH8
+      LmjmfSX4UBFCYBjGnIQwmKY5J850Q86xJWfHoz7vibFmiyzLc3IjACxzkNGtIefYkmOaJpIk
+      7WYAx0wP0KDBkcBy++233z7fShwqpq4xPDKKy+2mZtT3INtsB85AIUyD8WgUYbFSyiYpqSaS
+      XiWWzOK0WxCSTKVSxWY70GRvnWopR1GDYiZORQehlYmnC9itMpIkU6mq2KwHl/D30lgAAB69
+      SURBVJNJTpIv16BWIZEt4rRKjERjeN12asJCtVw66HUBZFNxUvkyTgVGxuL4fW5GhoZxeHzU
+      ahpqtXpQOTWtSr5QxmYRjMfiuBxWhkfH8Hq9jI2OYHW40Gs1NLWK1Wbbj8cjKOay6JJCtZgl
+      kcrjtMuMjsXwej1ER0ewuVzomn4QOaBVSxTKNRx2G8n4JDaHg9GRERxuD6nJMXSsCNPA1DWE
+      bMEi71uSodfIZPM47TaiIyMoDhfpyTEM2YZayJAtqSiydGz1AGNDA/iawkxOxCmrVQLhVrrb
+      9r+mAGAaNSpVlZHREaxWDwgNAficVoqVKtWaRFfPInyugxiSMBh47WVqnhYUXYBQEYDLaqGq
+      19A0k67FS/A4DmIApsr6l7fSu6yXxGQMqyxR1U26WrxMTKTJmzbaWyK0hH0HvR+bX9tEzQC3
+      005bk4vN/RmWruolMRFDLaVxBtro7W4/oIxcJsHYZB6XTWC3OkiWq/S2hxkZHCLQuYxSJkat
+      UkFx+VnW272fm2MyOrAFydtFyGMhNjJIVbbTFfEzMjpBc1cvhfQEaqGK3R9kyaLO/eqTTY4x
+      kTFZ3Obl5Vdeo7OnA6cvTCo6iNUXwagWwKiho7B8+dL9HlBSzOcYHB2nxW+nYDpo8Sokqxb0
+      UgYQKBLoprxQ0qMfGqYAq1UBU6BWq4eUmVmYBiOjY/T2LkKS5PoNkyQssoxpmKhaDXk/b5Fd
+      KaTj6CgUC3kk2YI8NZaUZRnTNFFr+n7fRrsrZCArdiaiUcSO+khYrQqmYVKtVLEc4syRJIEN
+      0CQJxapQqxn1BUxhoqlVJPngLp4/EEKxSAgBimzW921bFQy9hkWxIiGoqSoc6BhXSSYUCgKQ
+      jk/giXTisIBVUTAMHcVqBQSapsJBfLhAMIRFlpiITaLIgmKpiqLU3/qyxYIk1d/upjhwIK7H
+      Vw/Zqek1XE4Hw0ND0/Xrv5uEaRrHVg+gaxVGRidoa2/HBLRqhUAweMAboVUKDEcn8QXDSHoZ
+      U3bgsgoyRY1IyItid1EqlQj4D/7GRVfJVQXVfBKsLuwWg3xZJxz0YLc7KZYqBPzeg4qZnIhi
+      yg4cFpOiatIccDE2maGrPYwuu1BLuYNeV13OGJUatITcjCdy9HS1MTI8QqS9GwyNWq12UDnJ
+      yXGSmQIdHW1k8iVaQ15GxxN0dXcyER0l0NyKRQgMXcMbCLIvGxemwcjQADXZiR0VHYVIU5BY
+      PE1XVzvjo1HCrW1IhkDXVXz7kQMwOT5CpqCxZGkvWqmA1elkbDRKc1sH+WQMmyeAQ7EgY2Bx
+      eLBb9/2yyKYTxOIpOjo7SSUSBJtbKKbjOHxhhFZENS343a5jywAaNJhrjqkhUIMGc03DABqc
+      0BxTC2EN5hghGB3cRhkXK3q7EMJk22uvonhbWNLdRiaTYevWrQCsXr0at/v4O7C80QOcwNSK
+      kzz/WpTWJj/PPP57nntuPQ6Xm2f/uA4AVVVJJBK0tbVht9vnWdsjQ8MATmCEaWBzerBZTHKa
+      BY82wUvPP88FF108XWbRokV0dHQct2eYNWaBTmCEEGzd+DKGPYBczSBsLpLj47jCrZx56kmo
+      qoppmgfN3HEs0zCABic0jSFQgxOahgE0OKFpGECDE5qGATQ4oWkYQIMTmoYBNDihaRhAgxOa
+      3QxACMHowBaeeOIJ+kdiCNNkw8ZNe1XasGHjfgVmYwOMJIrTn1OxUZ54/AmGxuJ1eS89y+NP
+      PEWhou1Vt5iJ8fDDD/PII48wEI3vU76pawwMjR7wovr7+w74932xbeNLPPzwwzz88MO8url/
+      xvU3btgw4zpzQSo2wsOPPMIjjzxCNJ7ZZxmzVmJgeGK/MoRp0D84OOO2h7dtIK8eqIQgOrCV
+      xx9/guHxxIzlHw12M4CxbevZFC2w9oy1WCUDEIyORhFCkErEiCVSAIyMDBMbj5IrlhFCkMsk
+      iY5NYApBORsnVagfBl3NT/LQUy9z+trTcTsUNj73GKqzhbVrVnDffffvpUxyaBuWYCdr1qyh
+      JeynUimTjE+QyuZJxidI5wpIsozP60YIk9j4GOlcAYQgnZhkMpFCCPD5/AAUcmmiYzFMIVCr
+      FXKZNOOxOEJAuZAjOjaBbtTzDLV39xK2VZAC3fR0tlKpVKiWCpSrGqVCdvr6qpUKmanNFgIw
+      airRaJRtfQNH8GfaP4ObniO8eA1r1qwh7HdTqZSnfpsSsfEo+VIFyWLD53FO7Y8eJVcoIYQg
+      PjFOMpMDScLn9YIQZJJxxicTCOqHk2SScSaTmen7OTYRw5jK1p0cH2Fisv53YRqUK1O/e6WM
+      KUArpXlu0xBnrD0NdBV2eY52yK+XryCESaVSJZfNoBsmuXSSRDqLEILk5ASJdO6I3L/dNsU/
+      9tSzXPbmNxId3E6hKmhpCtLXP4DTzPPqUAY1OUhcdRAb3IQv3MJTf3iUJatOZnD7NtRShg39
+      kzS7TEqWEG1BF1tfeoaOUy+iPezB7XKy7oWXecMF52J3uIkNbKd9+Qqsu+wMysaG2DSaQtar
+      uHxBHnvgHmRngEcfuA9PqIV16/7ImlW9PP7Mi5i5MUZyJtVKERcF/vD8dmySTiAc4eknn6Qj
+      7OahJ1/CY9PYNBAntuV5RvMQ73sVa6SdPzzwEIGAB6wuPE47NrsDNTeB6VtEb1uAe//npwyM
+      JwkHPDz+zEsEnAabhtJsX/8kecPO9lefp2XRUh78zT14AyGGhqOcuuaUI/IjHYjxwdcYy5nU
+      Sll8wQi//dXP8IVbue+eX9LS3sUzf3yOVcu7eGrdq6Sj26hanBTyRWrJfl4dr6JXi7RHwjzx
+      5DMErBrrXosilWJEsyYvP/UQuuJmw/Pr6FiyhAfufxC/24nVHcBpVxjrf41UzU6ybz1VW5Bn
+      nnicVatW8MADD7J8+QpkSWbj+uco1iSWL19GbGADrw6mqCYHSap2Nr70LMuWLePJhx+htbeD
+      H3//38hrEoqWYf32CSymQSE5zGCiSmz7KyihTvwH2bs9U3brASwIagKaWzvYtnnn0Gdr3wQX
+      XXAWZ553ERODm3H7m1i1Yjmn9jYxnsoTHR0nOhEnnUrtJtyqKGhabfqzJOr5ZAEM08RUi6x7
+      5mkmkjusW6K9s5ve3l58bgdWT5DTVp9MW1c3p60+Cb+3HpMiBLT1LCEfHyGZzOLwt+KiTHRi
+      EsM0EUIQGx5i5Rlnc/Kpr6OSmUC2OTjjjDNY3N5KpQZdbSEGBofRavvO3am4grzjHW/DUo2T
+      K6pMpsuopRxWp48z1p5GRySMVkhgb17GSatW0hQ8+FbII0VnTy+9vb24nVZ8TW2cvGol3Yt7
+      OWnVyvrJPKI+vF2ybBljQ/2ksgXCnb3UMmPEE0n0qczb/dsHOeeC13P6684jMTaIzRPkdWvX
+      0B72o0t2WkJehkaj1PR6inrZYuWkk0/h7PNex3g0xuImJ1v7+3AFO5AlkK0O3vsXV9DbFuCX
+      99zH4OAYZ593FmedfQ5jw4PTiarq/wpaepbz1jddRHR0ggsufD2rV69isK+fSimHjiCTyc/5
+      vdvNAF5/1mp++avfEE8kqexynOeK3haefOYl1j/7JK09K1ArBfr7+3h1JE/EkqWEi862lr32
+      nvauPpNXn7ifLdu2sXn7IKeu6OT+3z/Jlo3rKStubJKF1rCP7f3DUzUE6WSCWCxGoXjgkyFL
+      5SrLV55MMRElWyjStmgZXqnKeKaePLelp4et619gy8aXsPtbd6+sa9j8zaxY3MqW7UP7lG+z
+      27FIEsGWHlw2iY72Vrq798hm4PSTjW6hv287k+m5/3EOlWQ8RiwWo1Q+4ICcclVj1UmnMBEd
+      pFiqsGTFKmqZCQpT76jepYt47uk/8spLzxFu69mtrmlU8YXaWdTmZ/vAGFDPAD40sJ0nn3iW
+      JcuWcOpZ5/Cbn/+CNaetBkCrZHnisWcoVms4HXYWLWrn+Wdf4MUXnqe9qwf0Kn192+kbqstz
+      OBwALO5pZ90zz7J58zZ6Fvdgsbro6OwhEpr7l8xewXDlYo5UtkAo3IzLYaNareJwOEhMRFGx
+      09keoVzMk8nmCTVFcNqtTI6PItm9+NxObIqEISnTOTG1apl4Mk0g1ITHaSeViJEtafT0dFOc
+      7Oc3T2zi7ZddStDnRteqJNP1RLgeXwCLJHA6ndMH5VUqFZwOO5Wqhs0qMzoyiifYTNjvZmIs
+      iqk46WiNUK3Wy+fScVJ5lZ7uTnStitXuxKipMJUjKJWv0NPdhWKpvwd0rYopWbFZLdNtApQK
+      OTK5Is0trQhdw+5wUlOrWGx21HKeWCJHJNKExz3zc9UOF61aJp2tG58vEEISxl73zOGwU1U1
+      rDKMjEQJRtrwu+1ER0ewe0J1f6taxelwkIyPU6rJdHe0Td9HtVpBsTvIJibIV0x6ujuQJQmt
+      WiGVTuNw+wj6vWiVAg88+gzvfNuf1JUTglwmRaGiEWlpwWaRie94jtoiqJUCY5Mpmpua8Xqc
+      VKsaTqej7oukEtRQaA4HSSfjaKZMS6Rpv2lQZsu8RoNq1RKTiTRef4iA7/jbbXSi0bdlA6GO
+      pYS8x074dCMcusEJTWMhrMEJzREzANPcPY+/Ycz+cLvZ1q2fMDm78wRm2+Z8XGeD2TNDAxCU
+      i3mqWg21WqFQLGEaOtl8oZ6wVAh0vT57tOfI6nBGWvMxSpttm8fadZ7ozGinsxAmhWKFZGYc
+      mwVa2joZHhxEsQjyKRnD6sVms9HW5EcIsdvbd8/PM2t3dnVn297htHm0rnPPPPcNZscMewCZ
+      cjFLa1sHwUCAgf4BDFmhpSVEpVCif3CUcNC3YH6Y4+UhUWsGmt4YHh0JZtYDGFUKpRp2bxWh
+      qbg8HoIeB0PRDO09HbTZ/GRSKdpaI9OZk3dwOMfczLbujrfpbOsezXoHqvt/T25idW+E1b2N
+      41bnmhkZgKw4WXPq3vEu4cjO//uckb3+3mD26IbJy30x/vyNJ8+3KtPM5aHlhmHMyfFHs5Vz
+      fGY7Ok6o6QY3/eD3LO8MY5mjs9EOBa1aZjyWoKOrG6tl5xDS0FVKFQOvx8kXf/gHxpPFA0g5
+      NI7miZ37omEAC5gtIym2R9NceGrPwQvPIcOjURb3LqGQSZBIZ2htbScRj+EP+CiWBV6Pk3xJ
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Global CO₂ Emissions Trend' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 CO₂ Emitting Countries' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
