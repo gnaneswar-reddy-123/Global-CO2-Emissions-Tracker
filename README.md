@@ -49,3 +49,7 @@ co2-emissions-tracker/
 - [x] Data cleaning script
 - [ ] Tableau dashboard
 - [ ] PDF report with policy brief on top polluters
+
+## Dashboard Preview
+
+![Global CO₂ Emissions Dashboard](images/CO2_Emissions_Dashboard.png)
